@@ -1,0 +1,96 @@
+body {
+  background: #f5f6fa;
+  font-family: 'Segoe UI', 'PingFang SC', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 32px 24px 24px 24px;
+}
+h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 24px;
+}
+.generator {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+  margin-bottom: 8px;
+}
+.options label {
+  font-size: 15px;
+  color: #444;
+}
+#length {
+  width: 60px;
+  margin-left: 4px;
+}
+.result {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+#password {
+  flex: 1;
+  font-size: 18px;
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #f8f8f8;
+}
+#copy {
+  padding: 6px 14px;
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#copy:hover {
+  background: #2563eb;
+}
+#generate {
+  padding: 10px 0;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#generate:hover {
+  background: #4f8cff;
+}
+.strength {
+  margin-top: 4px;
+  font-size: 14px;
+  min-height: 20px;
+}
+.desc {
+  margin-top: 24px;
+  color: #888;
+  font-size: 13px;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 16px 4px 16px 4px;
+  }
+  .options {
+    flex-direction: column;
+    gap: 8px;
+  }
+} 
